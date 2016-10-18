@@ -4,8 +4,8 @@ s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 #connect(tuple)
 s.connect(("www.sina.com.cn",80))
 #send get request
-s.send((b'GET / HTTP/1.1\r\nHost: www.sina.com.cn\r\nConnection: close\r\n\r\n')
-bf=[]
+#s.send((b'GET / HTTP/1.1\r\nHost: www.sina.com.cn\r\nConnection: close\r\n\r\n')
+bf = []
 while True:
 	d=s.recv(1024)
 	if d:
